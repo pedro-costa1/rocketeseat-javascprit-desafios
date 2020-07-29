@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+
+    <style>
+        .quadrado-vermelho {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="aux">
+        Clique no botão para gerar um quadrado vermelho:<input type="button" value="Gerar" onclick="gerarQuadrado()">
+    </div>
+
+    <script>
+        function gerarQuadrado() {
+            // Criando uma div para cada quadrado que for criado
+            var criaDiv = document.createElement('div');
+            // Setando a classe de cada div criada
+            criaDiv.setAttribute('class', 'quadrado-vermelho');
+
+            // Afiliando a div auxiliar
+            var divAux = document.querySelector('div#aux');
+            divAux.appendChild(criaDiv);
+        }
+    </script>
+</body>
+</html>
