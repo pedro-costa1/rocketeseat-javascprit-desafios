@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <script>
+        function experiencia(anosEstudos) {
+            if (anosEstudos > 7) {
+                console.log('Jedi Master.');
+            } else if (anosEstudos <= 7 && anosEstudos >= 4 ) {
+                console.log('Avançado.');
+            } else if (anosEstudos > 1 && anosEstudos <= 3) {
+                console.log('Intermediário.');
+            } else if (anosEstudos >= 0) {
+                console.log('Iniciante.');
+            } else {
+                console.log('Ano inválido.');
+            }
+        }
+
+        var anosEstudos = -1;
+        experiencia(anosEstudos);
+    </script>
+</body>
+</html>
