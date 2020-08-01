@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <div id="aux">
+        <ul id="ulAux">
+
+        </ul>
+    </div>
+
+    <script>
+        var nomes = ["Pedro", "Gabriel", "Lucas"];
+
+        for (i in nomes) {
+            // criando uma li
+            var criaLi = document.createElement('li');
+
+            // Afiliando a ul
+            var ulAux = document.querySelector('ul#ulAux');
+
+
+            ulAux.appendChild(criaLi).innerHTML = nomes[i];
+        }
+
+        
+    </script>
+</body>
+</html>
