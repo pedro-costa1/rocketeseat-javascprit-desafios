@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <div id="divAux">
+        <input type="text" name="nome" id="txtInput">
+
+        <button onclick="adicionar()">Adicionar</button>
+
+        <ul id="ulAux">
+
+        </ul>
+    </div>
+    <script>
+        function adicionar() {
+            // Pegando a string passada no input
+            var nome = document.querySelector('input#txtInput');
+
+            // Criando uma li
+            var criaLi = document.createElement('li');
+
+            // Afiliando à ul
+            var ulAux = document.querySelector('ul#ulAux');
+
+            ulAux.appendChild(criaLi).innerHTML = nome.value;
+
+            /*Opicional*/
+            
+            //automatizando
+            //apagando numero escrtio no input
+            nome.value = '';
+            //voltando cursor para o input
+            nome.focus();
+        }
+    </script>
+</body>
+</html>
